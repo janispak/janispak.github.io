@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-} 
-    </script>
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 </head>
-<body>
+<body style="background-color:white;">
 
-<title> Janis Pak Super Teacher</title>
-
-<!-- Tab links -->
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Teaching Phil')">Who Am I and my Teaching Philosophy</button>
-    <button class="tablinks" onclick="openCity(event, 'Designing')">Designing for Learning</button>
-    <button class="tablinks" onclick="openCity(event, 'TQS')">Teaching Quality Standard (TQS)</button>
-    <button class="tablinks" onclick="openCity(event, 'Plan')">Personal Self-Care Plan using HEARTcare Planning Tool
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Me 
+      <i class="fa fa-caret-down"></i>
     </button>
-    <button class="tablinks" onclick="openCity(event, 'prof')">Professional Development and Learning</button>
+    <div class="dropdown-content">
+      <a href="#">Who Am I</a>
+      <a href="#">My Teaching Philosophy</a>
+    </div>
+  </div>
+  <a href="#">Designing for Learning</a> 
+  <a href="#">Teaching Quality Standard</a> 
+  <a href="#">Personal Self-Care Plan using HEARTcare Planning Tool</a>
+   <a href="#">Professional Development and Learning</a> 
+   <a href="#">Assessments and Employment Documents</a>
+
 </div>
 
-<!-- Tab content -->
-<div id="Teaching Phil" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-</div>
-
-<div id="Designing" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-</div>
-
-<div id="TQS" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-</div> 
-
-<div id="Plan" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-</div> 
-
-<div id="prof" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-</div> 
-
-
+<h3>Welcome!</h3>
+<p>I'm Janis Pak</p>
 
 </body>
 </html>
