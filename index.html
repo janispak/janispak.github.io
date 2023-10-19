@@ -6,6 +6,7 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 .navbar {
@@ -21,6 +22,8 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+
 
 .dropdown {
   float: left;
@@ -67,6 +70,38 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.welcome {
+    width: 50%;
+    margin: auto;
+}
+
+.text {
+    width: 50%;
+    margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+.row html body {
+    height: 100%;
+}
+.row {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  padding: 1px;
+}
+.column_mid {
+  flex: 50%;
+  padding: 1px;
+}
 </style>
 </head>
 <body style="background-color:white;">
@@ -83,15 +118,27 @@ body {
     </div>
   </div>
   <a href="#">Designing for Learning</a> 
-  <a href="#">Teaching Quality Standard</a> 
-  <a href="#">Personal Self-Care Plan using HEARTcare Planning Tool</a>
+  <a href="#">TQS</a> 
+  <a href="#">Personal Self-Care Plan</a>
    <a href="#">Professional Development and Learning</a> 
    <a href="#">Assessments and Employment Documents</a>
 
 </div>
 
-<h3>Welcome!</h3>
-<p>I'm Janis Pak</p>
+
+
+<div class="row">
+    <div class="column">
+      <img src="music_notes.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column_mid">
+        <h3 class="welcome">Welcome!</h3>
+        <p class="text">I'm Janis Pak</p>
+    </div>
+    <div class="column">
+      <img src="music_notes.jpg" alt="Mountains" style="width:100%">
+    </div>
+</div>
 
 </body>
 </html>
