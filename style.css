@@ -5,7 +5,7 @@ height: 100%;
 
 .navbar {
 overflow: hidden;
-background-color: #333;
+background-color: #344966;
 }
 
 .navbar a {
@@ -36,7 +36,7 @@ margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-background-color: red;
+background-color: #AC7B84;
 }
 
 .dropdown-content {
@@ -133,15 +133,28 @@ padding: 1px;
 
 background-image: url("music_notes.jpg");
 background-size: 70%;
-border-top: 5px solid #000;
+border-top: 5px solid #344966;
 /*border-style: dotted;*/
 }
+h1{
+    color: #B84A62;
+}
+
+.column_who_am_i {
+    flex: 20%;
+    padding: 10px;
+    
+
+    background-size: 70%;
+    /*border-style: dotted;*/
+    /*border-style: dotted;*/
+    }
 .home_column_2 {
-    flex: 30%;
+    flex: 20%;
     padding: 1px;
     background-image: url("music_notes.jpg");
     background-size: 70%;
-    border-top: 5px solid #000;
+    border-top: 5px solid #344966;
     /*border-style: dotted;*/
     }
 
@@ -151,7 +164,7 @@ border-top: 5px solid #000;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 60%;
+    width: 75%;
 }
 
 .center_pic_inner{
@@ -162,7 +175,14 @@ border-top: 5px solid #000;
 .column_mid {
 flex: 50%;
 padding: 1px;
-border-left: 5px solid #000;
-border-right: 5px solid #000;
-border-top: 5px solid #000;
+border-left: 5px solid #344966;
+border-right: 5px solid #344966;
+border-top: 5px solid #344966;
 }
+.column_mid_who_am_i {
+    flex: 50%;
+    padding: 10px;
+    border-left: 5px solid #344966;
+    border-right: 5px solid #344966;
+    /*border-style: dotted;*/
+    }
