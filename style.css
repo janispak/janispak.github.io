@@ -66,12 +66,30 @@ display: block;
 }
 
 .welcome {
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    font-size: 32px;
+}
+
+.home_page_name {
+    width: 100%;
+    margin: auto;
+    font-size: 64px;
+}
+
+.page_headers{
+    width: 100%;
     margin: auto;
 }
 
+h3 {
+    /*font-family: Brush Script MT,cursive;*/
+    font-family: Luminari, fantasy;
+    font-size: 32px;
+    width: 100%;
+}
 .text {
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
@@ -84,15 +102,62 @@ padding-top: 5px;
 /*border-style: dotted;*/
 }
 
+.row_inner {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    padding-top: 5px;
+    
+    /*border-style: dotted;*/ 
+    }
+
+.inner_column_left{
+    flex: 20%;
+    padding: 1px;
+    /*border-style: dotted;*/ 
+}
+.inner_column_mid{
+    flex: 60%;
+    padding: 1px;
+    /*border-style: dotted;*/ 
+}
+.inner_column_right{
+    flex: 20%;
+    padding: 1px;
+    /*border-style: dotted;*/ 
+}
 /* Create three equal columns that sits next to each other */
 .column {
-flex: 25%;
+flex: 20%;
 padding: 1px;
 
 background-image: url("music_notes.jpg");
 background-size: 70%;
 border-top: 5px solid #000;
 /*border-style: dotted;*/
+}
+.home_column_2 {
+    flex: 30%;
+    padding: 1px;
+    background-image: url("music_notes.jpg");
+    background-size: 70%;
+    border-top: 5px solid #000;
+    /*border-style: dotted;*/
+    }
+
+.center_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60%;
+}
+
+.center_pic_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .column_mid {
 flex: 50%;
