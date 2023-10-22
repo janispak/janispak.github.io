@@ -95,7 +95,7 @@ h3 {
 .row {
 display: flex;
 align-items: stretch;
-height: 100vh;
+height: 150%;
 padding-top: 5px;
 
 /*border-style: dotted;*/
@@ -177,6 +177,7 @@ padding: 1px;
 border-left: 5px solid #344966;
 border-right: 5px solid #344966;
 border-top: 5px solid #344966;
+border-bottom: 5px solid #344966;
 }
 .column_mid_who_am_i {
     flex: 50%;
